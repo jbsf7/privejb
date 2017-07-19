@@ -1,0 +1,105 @@
+// Converts  values to binary
+// http://digital.cs.usu.edu/~allanv/cs1720/debug2.htm
+//http://www.winprog.org/tutorial/
+//http://www.cplusplus.com/forum/beginner/32383/
+//http://www.careerride.com/test.aspx?type=DOT.NET
+//https://www.tutorialspoint.com/cplusplus/cpp_multithreading.htm
+//https://www.tutorialspoint.com/cplusplus/cpp_pointers.htm
+//https://www.tutorialspoint.com/cplusplus/cpp_array_of_pointers.htm
+//
+//
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+// this code convert string to ASCII
+
+
+int getAscii()
+{
+    
+     string user;
+    int ascChar;
+
+    getline(cin, user);
+
+    cout << user << endl;
+
+    for (int i=0;i<user.length();i++)
+    {
+        ascChar = user[i];
+        cout << ascChar << endl;
+    }
+
+    return 0;
+}
+
+
+int getbin()
+{
+    
+  char character;
+    int i;
+    int m[8];
+ 
+ 
+    cout<<"Please enter a character: ";
+    cin>>character;
+    cout<<"You've entered "<<character<<endl;
+ 
+    for(i=0;i<8;i++)
+    {
+        m[i]=character%2;
+        character = character/2;
+    }
+ 
+    int top, bottom;
+ 
+    for(bottom=0,top =7; bottom<8; bottom++,top--)
+    {
+        
+        cout<<m[top];
+    }
+ 
+ return 0;   
+}
+
+int calcfib()
+{
+    int c, cc,first, second,next;
+    first =0;
+    second = 1;
+    c+1 ==  cc;
+    cout<<"CC "<<cc<<endl;
+    first+second;
+    next = first+second;
+    cout<<" Current fibonacci "<<next<<endl;
+    // save c+1  to temp file  and add it to the next file
+    // first + second = next  (start from 0)
+    
+    
+ return 0;   
+}
+
+int main()
+{
+    cout<<"enter characters and I'll display their Ascii Values"<<endl;
+    //getAscii();
+    
+    cout<<"now I'll display binary numbers"<<endl;
+    //getbin();
+   calcfib();
+    
+    
+    // convert ascii to binary
+    // calc lowest power closses to ascii value
+    //binary is 8 digits
+    
+    
+    //calcFib
+    ////displayFib
+    
+    return 0;
+}
